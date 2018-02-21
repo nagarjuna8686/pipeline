@@ -6,5 +6,10 @@ pipeline {
         git(url: 'https://github.com/nagarjuna8686/pipeline.git', branch: 'master')
       }
     }
+    stage('test') {
+      steps {
+        git(url: 'https://github.com/nagarjuna8686/pipeline.git', branch: 'master')
+      }
+    }
   }
 }
