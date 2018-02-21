@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        git(url: 'https://github.com/nagarjuna8686/pipeline.git', branch: 'master')
+      }
+    }
+  }
+}
